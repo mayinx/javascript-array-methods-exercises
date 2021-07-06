@@ -9,3 +9,6 @@ const movies = [
 ];
 
 // Your code below
+movies.forEach((el, i) => {
+  console.log(`${i + 1}: ${el}`);
+});

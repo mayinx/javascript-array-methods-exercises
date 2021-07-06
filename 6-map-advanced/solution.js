@@ -44,3 +44,17 @@ const tvShows = [
 ];
 
 // Your code below
+
+const tvShowsTitlesOnly = tvShows.map((el) => {
+  return el.title;
+});
+const tvShowObjectsReduced = tvShows.map((el) => {
+  return { title: el.title, rating: el.rating };
+});
+const tvShowsTitlesOnlyEmphasized = tvShows.map((el) => {
+  return el.rating >= 9 ? el.title.toUpperCase() : el.title.toLowerCase();
+});
+
+console.log(tvShowsTitlesOnly);
+console.log(tvShowObjectsReduced);
+console.log(tvShowsTitlesOnlyEmphasized);
